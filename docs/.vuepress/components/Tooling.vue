@@ -7,7 +7,7 @@
         v-for="(tool, index) in $site.locales[$localePath].tools"
         :key="index"
       >
-        <i v-if="tool.icon" :class="tool.icon" />
+        <i v-if="tool.icon" :class="[tool.icon, 'icon']" />
         <img v-else :src="iconMap[tool.src]" alt="Tool Icon" />
         {{ tool.name }}
       </div>
@@ -19,11 +19,13 @@
 import tailwindIcon from "@assets/tailwind-icon.svg";
 import adonisIcon from "@assets/adonis-icon.svg";
 import copilotIcon from "@assets/copilot-icon.svg";
+import tsIcon from "@assets/ts-icon.svg";
 
 const iconMap = {
   tailwind: tailwindIcon,
   adonis: adonisIcon,
   copilot: copilotIcon,
+  ts: tsIcon,
 };
 </script>
 
@@ -51,9 +53,15 @@ const iconMap = {
   border-radius: 0.2rem;
   padding: 0.2rem 0.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 img {
-  display: inline-block;
+  margin-right: 0.2rem;
   width: 1rem;
+}
+.icon {
+  margin-right: 0.2rem;
+  font-size: 1rem;
 }
 </style>

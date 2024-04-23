@@ -26,7 +26,7 @@ module.exports = {
       tools: [
         { name: "React", icon: "fa-brands fa-react" },
         { name: "Vue", icon: "fa-brands fa-vuejs" },
-        { name: "TypeScript", icon: "fa-brands fa-js" },
+        { name: "TypeScript", src: "ts" },
         { name: "Node", icon: "fa-brands fa-node-js" },
         { name: "Express", icon: "fa-brands fa-node-js" },
         { name: "Adonis", src: "adonis" },
@@ -66,7 +66,7 @@ module.exports = {
       tools: [
         { name: "React", icon: "fa-brands fa-react" },
         { name: "Vue", icon: "fa-brands fa-vuejs" },
-        { name: "TypeScript", icon: "fa-brands fa-js" },
+        { name: "TypeScript", src: "ts" },
         { name: "Node", icon: "fa-brands fa-node-js" },
         { name: "Express", icon: "fa-brands fa-node-js" },
         { name: "Adonis", src: "adonis" },
