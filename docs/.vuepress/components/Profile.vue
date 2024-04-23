@@ -22,7 +22,7 @@ import profileImagePath from "@assets/pez.svg";
   align-items: center;
 }
 .profilePic {
-  width: 10rem;
+  width: 12rem;
 }
 p {
   width: 100%;
