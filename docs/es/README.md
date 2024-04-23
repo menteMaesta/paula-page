@@ -1,2 +1,3 @@
 <Profile/>
 <Tooling/>
+<Connect/>

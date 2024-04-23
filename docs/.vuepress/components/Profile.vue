@@ -3,8 +3,8 @@
     <img :src="profileImagePath" alt="Profile Image" class="profilePic" />
     <div>
       <p>
-        <span>{{ $site.locales[$localePath].greeting }}</span
-        >{{ $site.locales[$localePath].introduction }}
+        {{ $site.locales[$localePath].introduction }}
+        <span>{{ $site.locales[$localePath].profession }}</span>
       </p>
       <p>{{ $site.locales[$localePath].about }}</p>
     </div>
@@ -26,5 +26,22 @@ import profileImagePath from "@assets/pez.svg";
 }
 p {
   width: 100%;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
+span {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+  }
+  .profilePic {
+    width: 8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
 </style>
