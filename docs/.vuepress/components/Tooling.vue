@@ -9,7 +9,7 @@
       >
         <i v-if="tool.icon" :class="[tool.icon, 'icon']" />
         <img v-else :src="iconMap[tool.src]" alt="Tool Icon" />
-        {{ tool.name }}
+        <p>{{ tool.name }}</p>
       </div>
     </div>
   </div>
@@ -45,23 +45,32 @@ const iconMap = {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  max-width: 40rem;
 }
 .tool {
-  margin-right: 1rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+
   border: 1px solid black;
   border-radius: 0.2rem;
+
   padding: 0.2rem 0.5rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-img {
-  margin-right: 0.2rem;
-  width: 1rem;
-}
-.icon {
-  margin-right: 0.2rem;
-  font-size: 1rem;
+
+  p {
+    margin: 0 0 0 1.4rem;
+  }
+
+  .icon,
+  img {
+    position: absolute;
+    left: 0.5rem;
+    top: auto;
+    font-size: 1rem;
+    width: 1rem;
+  }
 }
 </style>

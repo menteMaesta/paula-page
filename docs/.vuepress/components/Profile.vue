@@ -17,31 +17,31 @@ import profileImagePath from "@assets/pez.svg";
 
 <style scoped>
 .profile {
+  flex-direction: column;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .profilePic {
-  width: 12rem;
+  width: 8rem;
 }
 p {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0.2rem;
 }
 span {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 640px) {
   .profile {
-    flex-direction: column;
+    flex-direction: row;
   }
   .profilePic {
-    width: 8rem;
+    width: 12rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 </style>

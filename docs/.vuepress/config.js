@@ -2,12 +2,19 @@ const path = require("path");
 
 module.exports = {
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/hat.svg" }],
     [
       "script",
       {
         src: "https://kit.fontawesome.com/d29163bad1.js",
         crossorigin: "anonymous",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0",
       },
     ],
   ],

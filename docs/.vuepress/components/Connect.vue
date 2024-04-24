@@ -1,16 +1,15 @@
 <template>
   <div class="connect">
     <p>{{ $site.locales[$localePath].connect }}</p>
-    <div class="socials">
-      <a
-        v-for="(social, index) in $site.locales[$localePath].socials"
-        :key="index"
-        :href="social.href"
-        :target="social.href"
-      >
-        <i :class="social.icon" />
-      </a>
-    </div>
+    <a
+      v-for="(social, index) in $site.locales[$localePath].socials"
+      :key="index"
+      :href="social.href"
+      :target="social.href"
+      :aria-label="social.name"
+    >
+      <i :class="social.icon" />
+    </a>
   </div>
 </template>
 
@@ -18,21 +17,21 @@
 
 <style scoped>
 .connect {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-p {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.socials {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
+p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-right: 1rem;
+}
+
 a {
   margin-right: 1rem;
   padding: 0.2rem 0.5rem;
