@@ -1,5 +1,5 @@
 <template>
-  <div class="connect">
+  <footer class="connect">
     <p>{{ $site.locales[$localePath].connect }}</p>
     <a
       v-for="(social, index) in $site.locales[$localePath].socials"
@@ -10,16 +10,13 @@
     >
       <i :class="social.icon" />
     </a>
-  </div>
+  </footer>
 </template>
 
 <script setup></script>
 
 <style scoped>
 .connect {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
   width: 100%;
   display: flex;
   flex-direction: row;

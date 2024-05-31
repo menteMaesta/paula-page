@@ -43,6 +43,12 @@ module.exports = {
         { name: "Digital Ocean", icon: "fa-brands fa-digital-ocean" },
         { name: "Copilot", src: "copilot" },
       ],
+      projects: {
+        title: "Projects",
+        donCalcetonProject: "Don calcetón (work in progress)",
+        altDonCalceton: "Imagen from Don Calceton store",
+        personalizationStore: "Store for customizable products",
+      },
       connect: "Connect with me",
       socials: [
         {
@@ -83,6 +89,12 @@ module.exports = {
         { name: "Digital Ocean", icon: "fa-brands fa-digital-ocean" },
         { name: "Copilot", src: "copilot" },
       ],
+      projects: {
+        title: "Proyectos",
+        donCalcetonProject: "Don calcetón (trabajo en proceso)",
+        altDonCalceton: "Imagen de tienda Don Calceton",
+        personalizationStore: "Tienda de productos personalizables",
+      },
       connect: "Contáctame",
       socials: [
         {
