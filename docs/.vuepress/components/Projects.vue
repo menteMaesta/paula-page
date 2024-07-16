@@ -1,6 +1,21 @@
 <template>
   <div class="projects">
     <p class="title">{{ $site.locales[$localePath].projects.title }}</p>
+    <a
+      class="projectTitle"
+      href="https://mentemaesta.github.io/animated-loaders"
+      target="_blank"
+    >
+      <i class="fa-solid fa-link" />
+      {{ $site.locales[$localePath].projects.animatedIconsProject }}
+    </a>
+    <div class="projectWrapper">
+      <img
+        :alt="$site.locales[$localePath].projects.altAnimatedIcons"
+        class="animatedIconsPic"
+      />
+      <p>{{ $site.locales[$localePath].projects.animatedIconsDescription }}</p>
+    </div>
     <a class="projectTitle" href="https://www.rechinido.com" target="_blank">
       <i class="fa-solid fa-link" />
       {{ $site.locales[$localePath].projects.donCalcetonProject }}
@@ -60,6 +75,17 @@
 @media (min-width: 640px) {
   .calcetonPic {
     content: url("../assets/don-calceton.png");
+  }
+}
+
+.animatedIconsPic {
+  max-width: 100% !important;
+  content: url("../assets/animated-icons-phone.png");
+}
+
+@media (min-width: 640px) {
+  .animatedIconsPic {
+    content: url("../assets/animated-icons.png");
   }
 }
 </style>

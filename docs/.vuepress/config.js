@@ -42,12 +42,17 @@ module.exports = {
         { name: "TailwindCSS", src: "tailwind" },
         { name: "Digital Ocean", icon: "fa-brands fa-digital-ocean" },
         { name: "Copilot", src: "copilot" },
+        { name: "Storybook", icon: "fa-solid fa-s" },
+        { name: "NPM", icon: "fa-brands fa-npm" },
       ],
       projects: {
         title: "Projects",
         donCalcetonProject: "Don calcetón (work in progress)",
         altDonCalceton: "Imagen from Don Calceton store",
         personalizationStore: "Store for customizable products",
+        animatedIconsProject: "Animated SVG icons",
+        altAnimatedIcons: "Storybook catalog of animated icons",
+        animatedIconsDescription: "NPM package with animated SVG icons",
       },
       connect: "Connect with me",
       socials: [
@@ -88,12 +93,18 @@ module.exports = {
         { name: "TailwindCSS", src: "tailwind" },
         { name: "Digital Ocean", icon: "fa-brands fa-digital-ocean" },
         { name: "Copilot", src: "copilot" },
+        { name: "Storybook", icon: "fa-solid fa-s" },
+        { name: "NPM", icon: "fa-brands fa-npm" },
       ],
       projects: {
         title: "Proyectos",
         donCalcetonProject: "Don calcetón (trabajo en proceso)",
         altDonCalceton: "Imagen de tienda Don Calceton",
         personalizationStore: "Tienda de productos personalizables",
+        animatedIconsProject: "Iconos animados",
+        altAnimatedIcons: "Catálogo de iconos animados usando storybook",
+        animatedIconsDescription:
+          "Paquete de NPM que contiene diferentes iconos animados",
       },
       connect: "Contáctame",
       socials: [
