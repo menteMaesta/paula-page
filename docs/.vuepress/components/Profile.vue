@@ -6,7 +6,7 @@
       <h1>{{ hero.headline }}</h1>
       <p class="pitch">{{ hero.pitch }}</p>
       <div class="actions">
-        <a class="primary" href="/Paula_Gomez_Resume.pdf" target="_blank">
+        <a class="primary" :href="$withBase('/Paula_Gomez_Resume.pdf')" target="_blank">
           <i class="fa-solid fa-file-arrow-down" /> {{ hero.resume }}
         </a>
         <a

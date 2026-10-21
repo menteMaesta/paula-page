@@ -30,6 +30,7 @@ const tools = [
 ];
 
 module.exports = {
+  base: "/paula-page/",
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/hat.svg" }],
     [
